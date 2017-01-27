@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_details__section"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.v7ench.eswaripg.Details_Section"
+    tools:showIn="@layout/activity_details__section">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:cardElevation="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:weightSum="6"
+                android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        android:textColor="#2d2d2d"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1.5"
+        android:id="@+id/name_det"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile number"
+                android:textSize="20sp"
+                android:id="@+id/mn_det"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#2d2d2d"
+                android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room number"
+                    android:textSize="15sp"
+                    android:id="@+id/roomno_det"
+                    android:textColor="#2d2d2d"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consumed Amount"
+
+                    android:textSize="15sp"
+                    android:id="@+id/amt_det"
+                    android:textColor="#2d2d2d"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textStyle="normal|bold" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount"
+                android:inputType="number"
+                    android:id="@+id/amtpr_det"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="#2d2d2d"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:textAlignment="center" />
+                <Button
+                    android:layout_width="180dp"
+
+                    android:layout_height="wrap_content"
+                    android:id="@+id/genotp"
+                    android:text="Genrate OTP"
+                    android:gravity="center"
+                    android:textColor="#2d2d2d"
+                    android:layout_gravity="center"
+                    style="?attr/selectableItemBackground"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
